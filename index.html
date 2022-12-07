@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>counter App</title>
-    <link rel="stylesheet" href="counter.css">  
+    <title>Counter App</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
     <main class="container">
-    <h1>people entered</h1>
-    <h2 id="count-el">0</h2>
-    <button id="increment-btn" onclick="increment()">INCREMENT</button> 
+        <h1>People entered:</h1>
+        <h2 id="count-el">0</h2>
+        <button id="increment-btn" onclick="increment()">INCREMENT</button>
+     <!-- 2. Create a SAVE button.
+     Set the id to "save-btn" and call the save() function when it's clicked -->
     <button id="save-btn" onclick="save()">SAVE</button>
-    <button id="clear-btn" onclick="clear()">CLEAR</button>
-
+    <button id="clear_btn" onclick="location.reload()">CLEAR</button>
+    <!-- create P element and input Previous enteries to it 
+    set the id save-el to it-->
     <p id="save-el">Previous entries:</p>
-</main>
-
-   <script src ="counter.js"></script> 
+    </main>
+    <script src="index.js"></script>
 </body>
-</html>    
+</html>
